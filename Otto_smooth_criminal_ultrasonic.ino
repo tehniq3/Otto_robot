@@ -152,18 +152,14 @@ void loop()
     servo[2].SetTrim(TRIM_YR);
     servo[3].SetTrim(TRIM_YL);
   }
-  
+delay(500); 
  dance();
+delay(500); 
+ for(int i=0;i<4;i++) servo[i].SetPosition(90);
+delay(500);
  for(int i=0;i<4;i++) servo[i].detach();
  }
 delay(200);
-
-//for(int i=0;i<4;i++) servo[i].SetPosition(90);
-
-      
-          for(int i=0;i<4;i++) servo[i].SetPosition(90);
-   // }
- // }
 }
 
 void dance(){
